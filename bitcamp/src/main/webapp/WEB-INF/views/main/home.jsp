@@ -3,18 +3,20 @@
 <head>
 	<title>Home</title>
 	<script src = "${js}/jquery-3.3.1.min.js"></script>
+
 </head>
 <body>
 <h1>
-	Hello world!  
+	
 </h1>
 	<button id="btn">
-		ㅎㅇ
+		로그인
 	</button>
-<P>  The time on the server is ${serverTime}. </P>
+<P> 레이아웃 </P>
 <script>
 	$('#btn').on('click',function(){
-		alert('제이쿼리가 작동함');
+	
+		location.href = "${context}/login"
 	});
 </script>
 </body>

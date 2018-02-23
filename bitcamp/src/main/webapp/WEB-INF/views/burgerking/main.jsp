@@ -3,7 +3,7 @@
 <!doctype html>
 <html lang="en">
 <script src ="../../js/burgerking/burgerking.js"></script>
-<%@ include file="../common/head.jspf"%>
+<%@ include file="../common/head.jsp"%>
 <body>
 <div id ="wrapper">
 <a  href="#">HOME</a>
