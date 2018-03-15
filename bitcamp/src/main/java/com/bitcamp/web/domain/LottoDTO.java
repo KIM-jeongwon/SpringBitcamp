@@ -1,12 +1,19 @@
 package com.bitcamp.web.domain;
-public class LottoDTO {
-	private String lottoNum;
 
+import org.springframework.stereotype.Component;
+
+import lombok.Data;
+@Data
+@Component
+public class LottoDTO {
+	private String randomNum,
+	lottoNumber,
+	money,
+	count;//횟
+
+	@Override
+	public String toString() {
+		return "\n[" + lottoNumber + "]";
+	}
 	
-	public void setLottoNum(String lottoNum) {
-		this.lottoNum = lottoNum;
-	}
-	public String getLottoNum() {
-		return lottoNum;
-	}
 }

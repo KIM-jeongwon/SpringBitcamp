@@ -1,14 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<!doctype html>
-<html lang="en">
-<script src ="../../js/burgerking/burgerking.js"></script>
-<%@ include file="../common/head.jsp"%>
-<body>
-<div id ="wrapper">
-<a  href="#">HOME</a>
-<a  href="../index.jsp">로그아웃</a>
-<%@ include file="../common/nav.jsp"%>
 <section>
 <article>
 	<header>
@@ -25,7 +16,7 @@
 	<tr>
 		<td>
 				<figure>
-					<img src="../../img/hamburger.jpg"
+					<img src ="${path.image}/common/hamburger.jpg"
 							style="width: 200px; height: 200px;" alt="" /> 
 					<figcaption>
 	 					<input type="checkbox" name="menu" value="hamburger" />햄버거 :￦ 5500
@@ -35,7 +26,7 @@
 		</td>
 		<td>
 			<figure>
-		<img src="../../img/cock.jpg"
+		<img src ="${path.image}/common/cock.jpg"
 			style="width: 200px; height: 200px;" alt="" />
 			<figcaption>
 			<input type="checkbox"	name="menu" value="cock" />콜라 : ￦1.000
@@ -45,7 +36,7 @@
     </td>
 	<td>
 	<figure>
-	<img src="../../img/bagel.jpg"
+	<img src ="${path.image}/common/bagel.jpg"
 			style="width: 200px; height: 200px;" alt="" />
 		<figcaption>
 			<input type="checkbox"	name="menu" value="bagel" />베이글 : ￦4.000
@@ -57,7 +48,7 @@
 	<tr>
 		<td>
 		<figure>
-		<img src="../../img/chip.jpg"
+		<img src ="${path.image}/common/chip.jpg"
 			style="width: 200px; height: 200px;" alt="" /> 
 			<figcaption>
 			<input type="checkbox" name="menu" value="chip" />감자칩 : ￦1.000 
@@ -67,7 +58,7 @@
 			</td>
 		<td>
 		<figure>
-		<img src="../../img/coffee.jpg"
+		<img src ="${path.image}/common/coffee.jpg"
 			style="width: 200px; height: 200px;" alt="" />
 			 <figcaption>
 			 <input	type="checkbox" name="menu" value="coffee" />커피 : ￦900
@@ -77,7 +68,7 @@
 			 </td>
 		<td>
 		<figure>
-		<img src="../../img/salad.jpg"
+		<img src ="${path.image}/common/salad.jpg"
 			style="width: 200px; height: 200px;" alt="" /> 
 			<figcaption>
 			<input	type="checkbox" name="menu" value="salad" />샐러드 : ￦3000
@@ -111,6 +102,5 @@
 </section>
 <aside></aside>
 </div>
-<%@ include file = "../common/footer.jsp" %>
 </body>
 </html>

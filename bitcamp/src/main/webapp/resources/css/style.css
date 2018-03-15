@@ -1,0 +1,169 @@
+@charset "UTF-8";
+/* magnificFile */
+.white-popup {
+ position: relative;
+ background: #FFF;
+ padding: 20px;
+ width: auto;
+ max-width: 500px;
+ margin: 20px auto;
+}
+/*login*/
+
+#member_header{ height: 100px; text-align: center;}
+#member_wrapper{}
+#member_table{width: 80px; margin: 180px 0px 0px 0px;}
+#member_table tr td{ border: 1px solid;}
+#member_table tr { width: 30px;}
+#member_table tr th{ width: 3px;}
+#member_aside{ padding:20px; margin-left: 100px; width : 200px; height : 550px;
+ float: left; border: 1px solid grey; text-align: left;}
+#member_section{padding : 20px;border: 2px solid;}
+#member_button{ text-aligh : right;}
+#add_member_btn{width:100px ;font-size:15px; margin: 0 90%;}
+#member_input{width:50%; height:30%; margin:left;}
+
+/*index*/
+
+#index_header {width: 100%;	 text-align: center;}
+#index_table {width: 150px; margin: 0 auto; margin-top: 200px;}
+#index_Login-box {	width: 100px; margin: 0 auto; }
+#index_input_id{width: 185px; height:50px;}
+#index_login_btn{width: 100px; height : 100px;}
+#index_input_pass{width: 185px; height : 50px;}
+
+/*join*/
+
+#join_header{width: 100%; height: 100%;}
+#join_table { width: 900px;  height: 520px; border-style: solid;
+				 border-width: 1px; border-color: black;
+ 					text-align: center; margin: 0 auto;
+ }
+ #join_table tr td{ 
+ width: 300px;
+ border-style: solid;
+				 border-width: 1px; border-color: black;
+ 					text-align: ; margin: right;
+ }
+   #join_table_can{
+   text-align:left;
+    
+ }
+   #join_confirm_btn{
+   width: 80px;
+   height: 30px; 
+   text-align: center;
+    margin : auto;
+ }
+#join_down { border-style: solid; border-width: 1px;
+ }
+#join_confirm{
+	
+}
+
+/*bitcamp*/
+
+#bitcamp_header{}
+#bitcamp_body{}
+#bitcamp_table{margin-left: 150px; margin-top:50px; width:80%; height:200px; border: 1px solid;}
+#bitcamp_table tr{ border: 1x solid; width:100px; height:50px;  }
+#bitcamp_table tr th{background:grey;border : 1px solid; width:20px;}
+#bitcamp_table tr td{border: 1px solid;}
+#bitcamp_section{ }
+
+/*mypage*/
+
+select{width:50px; height:30px; }
+#mypage_table{margin-left:150px;width: 80%; height:200px; border :2px solid}
+#mypage_tr{}
+#mypage_table tr td{width: 200px; height: 20px;border : 1px solid }
+#img{width: 210px; height: 210px;}
+
+/*admin*/
+
+#admin_header {width : 100%; height :80px; text-align: center; background-color: #555; color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)}
+#admin_header h4 {text-align: right; margin-right: 20px}
+
+#admin_main_wrapper {}
+
+#admin_main_area {float:left; width: 80%; height: 600px; margin-left: 10px; padding: 20px; text-align: left}
+#admin_main_table {width : 60%; height: 500px; margin: 30px auto 0; text-align: center}
+#admin_main_table tr {height: 50%}
+#admin_main_table td {width: 30%; background-color: #f1f1f1; border: 3px solid white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)}
+
+#create_table_btn {width: 20%; height: 30px; margin-top: 15px}
+#admin_nav {float:left; width: 10%; height: 620px; text-align: left}
+#admin_nav ul {list-style-type: none; margin: 0; padding-top: 40px; width: 100%; height: 620px; background-color: #f1f1f1}
+#admin_nav li a{display: block; height:30px; color: #000; margin-top: -11px; margin-bottom: -10px; padding: 8px 16px; 
+  font-weight: bold; text-decoration: none; font-size: 15px}
+#admin_nav li a:hover {background-color: #555; color: white}
+#admin_nav li a.active {background-color: #4CAF50; color: white}
+
+/*common*/
+
+*{margin: 0px; padding: 0px;}
+h1{font : bold 50px verdana, sans-serif;}
+h2{font : bold 10px verdana, sans-serif;}
+header, section, footer, aside, nav, article, figure, figcaption, hgroup 
+						{display: block;}
+table, tr, td, th {	border-collapse: collapse;}
+body{text-align: center;}
+a{text-decoration: none; color:#0000a0}
+#wrapper{width: 100%; margin: 0 auto; text-align: center;
+	min-height : calc(100vh - 170px);
+}
+#header{height: 80%; width: 100% ;text-align: center;}
+#nav{background : #000080; padding: 5px 0px; width:100%;
+	margin-bottom: 20px;}
+	#nav li{display: inline-block; list-style: none; padding: 2px;}
+	#nav li a{color: white; font: bold 14px verdana, sans-serif;}
+#footer{
+	width: 100%;
+	
+}
+
+/*main*/
+
+#main_header{ height: 100px; text-align: center;}
+#main_body{}
+#main_table{width: 1000px; height: 550px;}
+#main_table tr{width: 500px; text-align : center; }
+#main_table tr th{border : 1px solid; width: 100px; height: 50px;  background-color: olive; }
+#main_table tr td{width: 100px; border: 1px solid;}
+#main_aside{  margin-left: 100px; width : 200px; height : 550px;
+ float: left; border: 1px solid grey; text-align: left;}
+#main_section{ width: 100px; height: 500px; float: left; margin-left: 100px; text-align: left;}
+#main_button{ width: 80px; height: 30px; margin: right;}
+
+/*memberlist*/
+
+#member_list_header{ height: 100px; text-align: center;}
+#member_list_wrapper{}
+#member_list_table{width: 80px; margin: 180px 0px 0px 0px;}
+#member_list_table tr td{ border: 1px solid;}
+#member_list_aside{ padding:20px; margin-left: 100px; width : 200px; height : 550px;
+ float: left; border: 1px solid grey; text-align: left;}
+#member_list_section{padding : 20px;border: 2px solid; width: 1000px; height: 550px; float: left; margin-left: 100px; text-align: left;}
+#member_list_button{ text-aligh : right;}
+#member_list_btn{width:100px ;font-size:15px; margin: 0 90%;}
+#member_list_input{width:50%; height:30%; margin:left;}
+
+/*memberREGISTER*/
+
+#member_register_header{ height: 100px; text-align: center;}
+#member_register_wrapper{}
+#member_register_table{width: 80px; margin: 180px 0px 0px 0px;}
+#member_register_table tr td{ border: 1px solid;}
+#member_register_aside{ padding:20px; margin-left: 100px; width : 200px; height : 550px;
+ float: left; border: 1px solid grey; text-align: left;}
+#member_register_section{padding : 20px;border: 2px solid; width: 1000px; height: 550px; float: left; margin-left: 100px; text-align: left;}
+#member_register_button{ text-aligh : right;}
+#member_register_btn{font-size:15px; width: 100px;}
+#member_register_input{width:50%; height:30%; margin:left;}
+
+#content{
+	margin-top:65px;
+}
+

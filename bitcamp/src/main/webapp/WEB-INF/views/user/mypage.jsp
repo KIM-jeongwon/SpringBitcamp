@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"	pageEncoding="UTF-8"%>
-	<%@ include file = "../common/nav.jsp" %>
+
 <head>
 	<meta charset="UTF-8" />
 	<h1>마이페이지</h1>
@@ -7,51 +7,60 @@
 <body>
 <article>
 </article>
-<script src = "${js}/jquery-3.3.1.min.js"></script>
-<form action="change_form">
+<script src = "${path.js}/jquery-3.3.1.min.js"></script>
 <table id = "mypage_table">
 <tr id ="mypage_table tr">
-	<td rowspan="5"><img src="<%=application.getContextPath()%>/resources/img/images.jpg"
-							id = "img" alt="" />  </td>
+	<td rowspan="5"><img src="${path.image}/common/profile_0.jpg">
+	</td>
 	<td class="title">ID</td>
-	<td>${sessionScope.member.id}</td>
+	<td>${user.id}</td>
 	<td>PW</td>
-	<td>${sessionScope.member.pass}</td>
+	<td>${user.pass}</td>
 </tr>
 <tr>
 	<td class="title">NAME</td>
-	<td>${sessionScope.member.name}</td>
+	<td>${user.name}</td>
 	<td>GENDER</td>
-	<td>${sessionScope.member.ssn}</td>
+	<td></td>
 </tr>
 <tr>
 	<td class="title">BIRTH</td>
-	<td>${sessionScope.member.ssn}</td>
+	<td></td>
 	<td>E-MAIL</td>
-	<td>${sessionScope.member.email}</td>
+	<td>${user.email}</td>
 </tr>
 <tr>
 	<td class="title">PHONE</td>
-	<td>${sessionScope.member.mobile.mobilenum}</td>
+	<td id ="td-phone">
+	
+	</td>
 	<td>ADDRESS</td>
-	<td>${sessionScope.member.addr}</td>
+	<td></td>
 </tr>
 <tr>
 	<td class="title" >ACCOUNT</td>
-	<td >${sessionScope.account.accountNum}</td>
+	<td >${user.account}</td>
 	<td>D-A-T-E</td>
-	<td>${sessionScope.member.mobile.regdate}</td>
+	<td></td>
 </tr>
 </table>
-</form>
-<button id = "change_pass">비번 변경</button>
-<button id = "delete_btn">회원 탈퇴</button>
-<button id = "nav_btn">네비로간다@</button>
+<button id = "btn_change_pass">비번 변경</button>
+<button id = "btn_delete_btn">회원 탈퇴</button>
 <script>
- $('#nav_btn').on('click',function(){
-	 
-	 location.href = "${context}/nav"
- });
+
+$(function(){
+	var phone =("${phone}"==="") ? "개통하기" : "010-1234-5678";
+		$('#td-phone').html('<a href="#" id="td-phone">010-5566-9840</a>');
+		
+	 $('#btn_change_pass').on('click',function(){
+		 alert('마이페이지 확인');
+		 location.href = "${path.context}/move/common/nav"
+	 });
+});
+
+$('#td-phone').on('click',function(){
+	alert('폰개통?');
+	var phone =$('#mypage_phone').val();
+	location.href='${path.context}/mobile/shop';
+}); 
 </script>
-</body>
-</html>

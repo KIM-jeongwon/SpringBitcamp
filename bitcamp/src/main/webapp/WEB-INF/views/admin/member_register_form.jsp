@@ -47,6 +47,6 @@
 		</table>
 		</form>
 	</section>
-		<%@ include file = "../common/footer.jsp" %>
-	<script src ="../../js/admin/member_register_form.js"></script>
+
+	
 </body>

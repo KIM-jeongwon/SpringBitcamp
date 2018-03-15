@@ -1,14 +1,18 @@
 package com.bitcamp.web.service;
 
-import com.bitcamp.web.command.Command;
-import com.bitcamp.web.command.ResultMap;
+import java.util.List;
 
+import org.springframework.stereotype.Component;
+
+import com.bitcamp.web.domain.MobileDTO;
+@Component
 public interface MobileService {
 
-	public ResultMap makePhone(Command cmd);
+	public List<MobileDTO> phones();
 
-	public ResultMap findMobile(Command cmd);
 
+
+	
 
 
 }

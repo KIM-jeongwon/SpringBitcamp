@@ -1,13 +1,16 @@
 package com.bitcamp.web.service;
 
-import com.bitcamp.web.command.Command;
-import com.bitcamp.web.command.ResultMap;
+import org.springframework.stereotype.Component;
 
+import com.bitcamp.web.command.Command;
+import com.bitcamp.web.domain.BoardDTO;
+import com.bitcamp.web.domain.MemberDTO;
+import com.bitcamp.web.domain.TxDTO;
+@Component
 public interface MemberService {
-	public ResultMap findMemberById(Command cmd);
-	public ResultMap make();
-	public ResultMap login(Command cmd);
-	public ResultMap changePass(Command cmd);
-	public ResultMap DeleteId(Command cmd);
-	public ResultMap CreateBank();
+	public void addMember(Command cmd);
+	public MemberDTO findMemberById(Command cmd);
+	public boolean exist(Command cmd);
+	public void deleteMember(Command cmd);
+	public TxDTO findByPhone(Command cmd);
 }

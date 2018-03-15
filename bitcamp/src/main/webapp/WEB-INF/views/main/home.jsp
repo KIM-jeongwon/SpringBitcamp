@@ -2,22 +2,18 @@
 <html>
 <head>
 	<title>Home</title>
-	<script src = "${js}/jquery-3.3.1.min.js"></script>
 
 </head>
 <body>
-<h1>
-	
-</h1>
-	<button id="btn">
-		로그인
-	</button>
-<P> 레이아웃 </P>
-<script>
-	$('#btn').on('click',function(){
-	
-		location.href = "${context}/login"
-	});
-</script>
+
+<div class="container">
+ <div class="embed-responsive embed-responsive-4by3">
+    <iframe src="https://www.youtube.com/embed/qVk33k94xzo"></iframe>
+  </div>
+</div>
+
 </body>
+
+<body>
+
 </html>

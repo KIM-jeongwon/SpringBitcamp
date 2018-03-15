@@ -51,7 +51,6 @@
 </tr>
 </table>
 </section>
-<%@ include file = "../common/footer.jsp" %>
 <script ></script>
 </body>
 </html>
